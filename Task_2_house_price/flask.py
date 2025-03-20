@@ -35,7 +35,7 @@ scaled_input_data = scaler.transform(input_data)
 if st.button("Predict"):
     prediction = model.predict(scaled_input_data)
     
-    price_usd = prediction[0] * 100000  # Convert to USD
+    price_usd = prediction[0] * 100000
 
     exchange_rate = 83
     price_inr = price_usd * exchange_rate
